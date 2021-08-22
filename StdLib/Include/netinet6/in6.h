@@ -425,7 +425,7 @@ struct route_in6 {
 #define IPV6_2292HOPLIMIT 20 /* bool; hop limit */
 #define IPV6_2292NEXTHOP  21 /* bool; next hop addr */
 #define IPV6_2292HOPOPTS  22 /* bool; hop-by-hop option */
-#define IPV6_2292DSTOPTS  23 /* bool; destinaion option */
+#define IPV6_2292DSTOPTS  23 /* bool; destination option */
 #define IPV6_2292RTHDR    24 /* bool; routing header */
 #define IPV6_2292PKTOPTIONS 25 /* buf/cmsghdr; set/get IPv6 options */
 #endif
