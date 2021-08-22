@@ -60,7 +60,7 @@
     the value of which is the offset in bytes, to the structure member (Member),
     from the beginning of its structure (StrucName).
 
-    Alliased to OFFSET_OF which is defined in MdePkg/Include/Base.h which is
+    Aliased to OFFSET_OF which is defined in MdePkg/Include/Base.h which is
     automatically included by the EDK II build tools.
 **/
 #define offsetof(StrucName, Member)  OFFSET_OF(StrucName, Member)
