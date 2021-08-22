@@ -653,7 +653,7 @@ PacketTx (
     //  Display the operation
     //
     DEBUG (( DEBUG_TX_PACKET,
-              "0x%08x: Packet transmiting\r\n",
+              "0x%08x: Packet transmitting\r\n",
               pPacket ));
     DEBUG (( DEBUG_TX,
               "0x%08x: pContext sending 0x%08x bytes\r\n",
