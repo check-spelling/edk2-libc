@@ -583,7 +583,7 @@ struct ip6_mtuinfo {
 #define IPV6CTL_MRTPROTO  8 /* multicast routing protocol */
 #define IPV6CTL_MAXFRAGPACKETS  9 /* max packets reassembly queue */
 #define IPV6CTL_SOURCECHECK 10  /* verify source route and intf */
-#define IPV6CTL_SOURCECHECK_LOGINT 11 /* minimume logging interval */
+#define IPV6CTL_SOURCECHECK_LOGINT 11 /* minimum logging interval */
 #define IPV6CTL_ACCEPT_RTADV  12
 #define IPV6CTL_KEEPFAITH 13
 #define IPV6CTL_LOG_INTERVAL  14
