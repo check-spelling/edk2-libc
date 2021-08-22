@@ -318,7 +318,7 @@ EstimateWtoM(const wchar_t * Src, size_t Limit, size_t *NumChar)
   if(NumChar != NULL) {
     *NumChar = CharCount;
   }
-  return (size_t)Estimate;      // Return esimate of required bytes.
+  return (size_t)Estimate;      // Return estimate of required bytes.
 }
 
 /*  Determine the number of characters in a MBCS string.
