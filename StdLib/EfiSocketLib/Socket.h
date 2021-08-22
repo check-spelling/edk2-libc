@@ -349,7 +349,7 @@ typedef struct {
   Configure the network layer.
 
   @param [in] pProtocol   Protocol structure address
-  @param [in] pConfigData Address of the confiuration data
+  @param [in] pConfigData Address of the configuration data
 
   @return   Returns EFI_SUCCESS if the operation is successfully
             started.
