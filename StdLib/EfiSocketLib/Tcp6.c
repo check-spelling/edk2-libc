@@ -2037,7 +2037,7 @@ EslTcp6TxBuffer (
       if ( pSocket->MaxTxBuf > *pTxBytes ) {
         if ( pPort->bTxFlowControl ) {
           DEBUG (( DEBUG_TX,
-                    "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\r\n0x%08x: pPort, TX flow control released, Max bytes: %d > %d bufferred bytes\r\n",
+                    "TTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\r\n0x%08x: pPort, TX flow control released, Max bytes: %d > %d buffered bytes\r\n",
                     pPort,
                     pSocket->MaxTxBuf,
                     *pTxBytes ));
@@ -2153,7 +2153,7 @@ EslTcp6TxBuffer (
       else {
         if ( !pPort->bTxFlowControl ) {
           DEBUG (( DEBUG_TX,
-                    "0x%08x: pPort, TX flow control applied, Max bytes %d <= %d bufferred bytes\r\nTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\r\n",
+                    "0x%08x: pPort, TX flow control applied, Max bytes %d <= %d buffered bytes\r\nTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT\r\n",
                     pPort,
                     pSocket->MaxTxBuf,
                     *pTxBytes ));
