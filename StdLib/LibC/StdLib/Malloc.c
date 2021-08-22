@@ -89,7 +89,7 @@ malloc(size_t Size)
   UINTN         NodeSize;
 
   if( Size == 0) {
-    errno = EINVAL;   // Make errno diffenent, just in case of a lingering ENOMEM.
+    errno = EINVAL;   // Make errno different, just in case of a lingering ENOMEM.
     DEBUG((DEBUG_ERROR, "ERROR malloc: Zero Size\n"));
     return NULL;
   }
