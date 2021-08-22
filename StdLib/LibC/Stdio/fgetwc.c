@@ -67,7 +67,7 @@ __fgetwc_unlock(FILE *fp)
     return WEOF;
   }
 
-  /* if there're ungetwc'ed wchars, use them */
+  /* if there ungetwc'ed wchars, use them */
   if (wcio->wcio_ungetwc_inbuf) {
     wc = wcio->wcio_ungetwc_buf[--wcio->wcio_ungetwc_inbuf];
 
