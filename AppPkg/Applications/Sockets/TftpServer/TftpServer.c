@@ -70,7 +70,7 @@ BufferFill (
     pContext->BytesRemaining -= BytesRead;
     pContext->ValidBytes += BytesRead;
     DEBUG (( DEBUG_FILE_BUFFER,
-              "0x%08x: Buffer filled with %Ld bytes, %Ld bytes ramaining\r\n",
+              "0x%08x: Buffer filled with %Ld bytes, %Ld bytes remaining\r\n",
               pContext->pFill,
               BytesRead,
               pContext->BytesRemaining ));
