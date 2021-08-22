@@ -226,7 +226,7 @@ typedef struct {
   UINT64 ClockFrequency;        ///<  Frequency of the clock
   UINT64 Time1;                 ///<  Clock value after rollover
   UINT64 Time2;                 ///<  Clock value before rollover
-  UINT64 RxTime;                ///<  Time when the packet was recevied
+  UINT64 RxTime;                ///<  Time when the packet was received
 
   //
   //  TFTP port management

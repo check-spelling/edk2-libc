@@ -1596,13 +1596,13 @@ EslSocketRxPoll (
   <ul>
     <li>::EslIp4Receive to restart the receive engine to release flow control.</li>
     <li>::EslIp4RxComplete to continue the operation of the receive engine if flow control is not being applied.</li>
-    <li>::EslIp4SocketIsConfigured to start the recevie engine for the new socket.</li>
-    <li>::EslTcp4ListenComplete to start the recevie engine for the new socket.</li>
+    <li>::EslIp4SocketIsConfigured to start the receive engine for the new socket.</li>
+    <li>::EslTcp4ListenComplete to start the receive engine for the new socket.</li>
     <li>::EslTcp4Receive to restart the receive engine to release flow control.</li>
     <li>::EslTcp4RxComplete to continue the operation of the receive engine if flow control is not being applied.</li>
     <li>::EslUdp4Receive to restart the receive engine to release flow control.</li>
     <li>::EslUdp4RxComplete to continue the operation of the receive engine if flow control is not being applied.</li>
-    <li>::EslUdp4SocketIsConfigured to start the recevie engine for the new socket.</li>
+    <li>::EslUdp4SocketIsConfigured to start the receive engine for the new socket.</li>
   </ul>
 
   @param [in] pPort       Address of an ::ESL_PORT structure.
