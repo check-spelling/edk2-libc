@@ -1218,7 +1218,7 @@ TftpOptionSet (
   NextValue = Value / 10;
 
   //
-  //  Supress leading zeros
+  //  Suppress leading zeros
   //
   if ( 0 != NextValue ) {
     pOack = TftpOptionSet ( pOack, NextValue );
