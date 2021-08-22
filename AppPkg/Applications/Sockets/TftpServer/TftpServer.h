@@ -194,7 +194,7 @@ typedef struct _TSDT_CONNECTION_CONTEXT {
   //
   UINT32 AckCount;              ///<  Number of ACKs to receive before increasing the window
   UINT32 PacketsInWindow;       ///<  Number of packets in the window
-  UINT32 Threshold;             ///<  Size of window when ACK count becomes logrithmic
+  UINT32 Threshold;             ///<  Size of window when ACK count becomes logarithmic
   UINT32 WindowSize;            ///<  Size of the transmit window
   UINT64 MaxTimeout;            ///<  Maximum number of seconds to wait before retransmission
   UINT64 Rtt2x;                 ///<  Twice the average round trip time in nanoseconds
