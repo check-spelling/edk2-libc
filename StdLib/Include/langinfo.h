@@ -17,8 +17,8 @@
 #define T_FMT   ((nl_item)2)  /* Time format string */
 #define T_FMT_AMPM  ((nl_item)3)  /* Time format string with 12 hour
              clock */
-#define AM_STR    ((nl_item)4)  /* Ante Meridiem afix */
-#define PM_STR    ((nl_item)5)  /* Post Meridiem afix */
+#define AM_STR    ((nl_item)4)  /* Ante Meridiem suffix */
+#define PM_STR    ((nl_item)5)  /* Post Meridiem suffix */
 
 #define DAY_1   ((nl_item)6)  /* Name of the first day of the week */
 #define DAY_2   ((nl_item)7)
