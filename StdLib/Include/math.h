@@ -29,7 +29,7 @@
 #include  <sys/featuretest.h>
 
 /** @{
-    @brief    These are forward references to unions and macros used internaly
+    @brief    These are forward references to unions and macros used internally
               by the implementation of the math functions and macros.
 **/
 union __float_u {
