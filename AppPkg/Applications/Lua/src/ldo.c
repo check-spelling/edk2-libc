@@ -158,7 +158,7 @@ static void correctstack (lua_State *L, TValue *oldstack) {
 #define ERRORSTACKSIZE  (LUAI_MAXSTACK + 200)
 
 
-void luaD_reallocstack (lua_State *L, int newsize) {
+void luaD_reading (lua_State *L, int newsize) {
   TValue *oldstack = L->stack;
   int lim = L->stacksize;
   lua_assert(newsize <= LUAI_MAXSTACK || newsize == ERRORSTACKSIZE);
@@ -182,11 +182,11 @@ void luaD_growstack (lua_State *L, int n) {
     if (newsize > LUAI_MAXSTACK) newsize = LUAI_MAXSTACK;
     if (newsize < needed) newsize = needed;
     if (newsize > LUAI_MAXSTACK) {  /* stack overflow? */
-      luaD_reallocstack(L, ERRORSTACKSIZE);
+      luaD_reading(L, ERRORSTACKSIZE);
       luaG_runerror(L, "stack overflow");
     }
     else
-      luaD_reallocstack(L, newsize);
+      luaD_reading(L, newsize);
   }
 }
 
@@ -210,7 +210,7 @@ void luaD_shrinkstack (lua_State *L) {
       goodsize >= L->stacksize)  /* would grow instead of shrink? */
     condmovestack(L);  /* don't change stack (change only for debugging) */
   else
-    luaD_reallocstack(L, goodsize);  /* shrink it */
+    luaD_reading(L, goodsize);  /* shrink it */
 }
 
 

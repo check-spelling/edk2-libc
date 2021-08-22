@@ -3747,7 +3747,7 @@ _PyPopen(char *cmdstring, int mode, int n)
              break;
 
          case _O_RDONLY | _O_BINARY:
-             /* Case for readinig from child Stdout in binary mode. */
+             /* Case for reading from child Stdout in binary mode. */
              fd1 = _open_osfhandle((Py_intptr_t)hChildStdoutRdDup, mode);
              f1 = _fdopen(fd1, "rb");
              f = PyFile_FromFile(f1, cmdstring, "rb", _PyPclose);

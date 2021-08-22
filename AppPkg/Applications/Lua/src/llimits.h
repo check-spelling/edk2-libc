@@ -296,7 +296,7 @@ union luai_Cast { double l_d; LUA_INT32 l_p[2]; };
 #define condmovestack(L)	((void)0)
 #else
 /* realloc stack keeping its size */
-#define condmovestack(L)	luaD_reallocstack((L), (L)->stacksize)
+#define condmovestack(L)	luaD_reading((L), (L)->stacksize)
 #endif
 
 #if !defined(HARDMEMTESTS)
