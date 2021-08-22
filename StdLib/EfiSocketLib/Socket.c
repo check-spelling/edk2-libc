@@ -263,7 +263,7 @@
   ::EslSocketRxStart connects an ::ESL_PACKET structure to the ::ESL_IO_MGMT structure
   and then calls the network layer to start the receive operation.  Upon
   receive completion, ::EslSocketRxComplete breaks the connection between these
-  structrues and places the ESL_IO_MGMT structure onto the ESL_PORT::pRxFree list to
+  structures and places the ESL_IO_MGMT structure onto the ESL_PORT::pRxFree list to
   make token and event available for another receive operation.  EslSocketRxComplete
   then queues the ESL_PACKET structure (data packet) to either the
   ESL_SOCKET::pRxOobPacketListTail or ESL_SOCKET::pRxPacketListTail depending on
