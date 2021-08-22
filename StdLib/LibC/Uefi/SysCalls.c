@@ -242,7 +242,7 @@ close  (int fd)
     @param[in]    path  The MBCS path of the file to delete.
 
     @retval   -1  Unable to open the file specified by path.
-    @retval   -1  If (errno == EPERM), unlink is not permited for this file.
+    @retval   -1  If (errno == EPERM), unlink is not permitted for this file.
     @retval   -1  Low-level delete filed.  Reason is in errno.
     @retval   0   The file was successfully deleted.
 **/
