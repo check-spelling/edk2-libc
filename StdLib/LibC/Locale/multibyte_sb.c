@@ -45,7 +45,7 @@ __RCSID("$NetBSD: multibyte_sb.c,v 1.5 2004/07/21 20:27:46 tshiozak Exp $");
 
 /*
  * Stub multibyte character functions.
- * This cheezy implementation is fixed to the native single-byte
+ * This cheesy implementation is fixed to the native single-byte
  * character set.
  */
 
