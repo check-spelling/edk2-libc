@@ -996,7 +996,7 @@ typedef struct _ESL_SOCKET {
   //
   ESL_SOCKET * pNext;           ///<  Next socket in the list of sockets
   int errno;                    ///<  Error information for this socket
-  EFI_STATUS Status;            ///<  Asyncronous error information for this socket
+  EFI_STATUS Status;            ///<  Asynchronous error information for this socket
   SOCKET_STATE State;           ///<  Socket state
   UINT32 DebugFlags;            ///<  Debug flags
 
