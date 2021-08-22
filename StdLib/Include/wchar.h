@@ -962,7 +962,7 @@ Mode is less than zero, the function first attempts to make the stream byte orie
 Otherwise, Mode is zero and the function does not alter the orientation of the stream.
 
     @param[in]  Stream    The stream to be queried.
-    @param[in]  Mode      Control value selecting between quering or setting
+    @param[in]  Mode      Control value selecting between querying or setting
                           the Stream's orientation.
     @return   The fwide function returns a value greater than zero if, after the call, the stream has
 wide orientation, a value less than zero if the stream has byte orientation, or zero if the
