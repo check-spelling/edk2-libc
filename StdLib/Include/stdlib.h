@@ -73,7 +73,7 @@
     size_t      wcstombs  (char * __restrict dest,
                            const wchar_t * __restrict src, size_t limit);
 
-    ################  Miscelaneous functions for *nix compatibility
+    ################  Miscellaneous functions for *nix compatibility
     char       *realpath    (char *file_name, char *resolved_name);
     const char *getprogname (void);
     void        setprogname (const char *progname);
@@ -858,7 +858,7 @@ size_t  mbstowcs(wchar_t * __restrict Dest, const char * __restrict Src, size_t 
 **/
 size_t  wcstombs(char * __restrict Dest, const wchar_t * __restrict Src, size_t Limit);
 
-/* ##############  Miscelaneous functions for *nix compatibility  ########## */
+/* ##############  Miscellaneous functions for *nix compatibility  ########## */
 
 /** The realpath() function shall derive, from the pathname pointed to by
     file_name, an absolute pathname that names the same file, whose resolution
