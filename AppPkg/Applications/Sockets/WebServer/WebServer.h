@@ -221,7 +221,7 @@ EFI_STATUS
   );
 
 /**
-  Data structure to delcare page support routines
+  Data structure to declare page support routines
 **/
 typedef struct {
   UINT16 * pPageName;         ///<  Name of the page
