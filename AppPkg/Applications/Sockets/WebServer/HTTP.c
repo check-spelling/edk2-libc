@@ -1104,7 +1104,7 @@ HttpSendGuid (
     }
 
     //
-    //  Display the thrid 16 bits
+    //  Display the third 16 bits
     //
     Status = HttpSendAnsiString ( SocketFD,
                                   pPort,
