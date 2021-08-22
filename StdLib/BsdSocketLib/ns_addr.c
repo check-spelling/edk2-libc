@@ -71,7 +71,7 @@ ns_addr(
   buf[sizeof(buf) - 1] = '\0';
 
   /*
-   * First, figure out what he intends as a field separtor.
+   * First, figure out what he intends as a field separator.
    * Despite the way this routine is written, the prefered
    * form  2-272.AA001234H.01777, i.e. XDE standard.
    * Great efforts are made to insure backward compatability.
