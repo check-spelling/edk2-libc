@@ -211,7 +211,7 @@ inet_net_pton_ipv4(
 			goto emsgsize;
 	}
 
-	/* Firey death and destruction unless we prefetched EOS. */
+	/* Fiery death and destruction unless we prefetched EOS. */
 	if (ch != '\0')
 		goto enoent;
 
