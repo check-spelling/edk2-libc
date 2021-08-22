@@ -1571,7 +1571,7 @@ EslSocketRxComplete (
 /**
   Poll a socket for pending receive activity.
 
-  This routine is called at elivated TPL and extends the idle
+  This routine is called at elevated TPL and extends the idle
   loop which polls a socket down into the LAN driver layer to
   determine if there is any receive activity.
 
