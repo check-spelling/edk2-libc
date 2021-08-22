@@ -25,7 +25,7 @@
 #
 
 [Sources]
-  Utility/DevGenisis.c
+  Utility/DevGenesis.c
   Utility/DevSearch.c
   Utility/Path.c
 
