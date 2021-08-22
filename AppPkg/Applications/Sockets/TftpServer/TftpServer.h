@@ -125,7 +125,7 @@
 #define TFTP_OP_WRITE_REQUEST     2     ///<  Write request, zero terminated file name, zero terminated mode
 #define TFTP_OP_DATA              3     ///<  Data block, end-of-file indicated by short block
 #define TFTP_OP_ACK               4     ///<  ACK block number
-#define TFTP_OP_ERROR             5     ///<  Error number and explaination
+#define TFTP_OP_ERROR             5     ///<  Error number and explanation
 #define TFTP_OP_OACK              6     ///<  ACK the options
 
 #define TFTP_MAX_BLOCK_SIZE       4096  ///<  Maximum block size
