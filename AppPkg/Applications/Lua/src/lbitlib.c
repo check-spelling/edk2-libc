@@ -19,14 +19,14 @@
 #endif
 
 
-#define ALLONES		(~(((~(lua_Unsigned)0) << (LUA_NBITS - 1)) << 1))
+#define ALL_ONES		(~(((~(lua_Unsigned)0) << (LUA_NBITS - 1)) << 1))
 
 /* macro to trim extra bits */
-#define trim(x)		((x) & ALLONES)
+#define trim(x)		((x) & ALL_ONES)
 
 
 /* builds a number with 'n' ones (1 <= n <= LUA_NBITS) */
-#define mask(n)		(~((ALLONES << 1) << ((n) - 1)))
+#define mask(n)		(~((ALL_ONES << 1) << ((n) - 1)))
 
 
 typedef lua_Unsigned b_uint;
@@ -116,7 +116,7 @@ static int b_arshift (lua_State *L) {
   if (i < 0 || !(r & ((b_uint)1 << (LUA_NBITS - 1))))
     return b_shift(L, r, -i);
   else {  /* arithmetic shift for 'negative' number */
-    if (i >= LUA_NBITS) r = ALLONES;
+    if (i >= LUA_NBITS) r = ALL_ONES;
     else
       r = trim((r >> i) | ~(~(b_uint)0 >> i));  /* add signal bit */
     lua_pushunsigned(L, r);
