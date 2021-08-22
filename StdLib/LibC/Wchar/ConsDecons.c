@@ -1,5 +1,5 @@
 /** @file
-    Constructor and Deconstructor functions for <wchar.h>.
+    Constructor and Destructor functions for <wchar.h>.
 
     Unless explicitly stated otherwise, the functions defined in this file order
     two wide characters the same way as two integers of the underlying integer
