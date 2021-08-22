@@ -145,7 +145,7 @@ Field(
   }
   /*
    * This is REALLY stretching it but there was a
-   * comma notation separting shorts -- definitely non standard
+   * comma notation separating shorts -- definitely non standard
    */
   if (1 < (i = sscanf(buf,"%x,%x,%x",
       &hb[0], &hb[1], &hb[2]))) {
