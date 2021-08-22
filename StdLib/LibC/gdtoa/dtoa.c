@@ -569,7 +569,7 @@ dtoa
    * shift left if necessary so divisor has 4 leading 0 bits.
    *
    * Perhaps we should just compute leading 28 bits of S once
-   * and for all and pass them and a shift to quorem, so it
+   * and for all and pass them and a shift to quorum, so it
    * can do shifts and ors to compute the numerator for q.
    */
 #ifdef Pack_32
@@ -650,7 +650,7 @@ dtoa
       }
 
     for(i = 1;;i++) {
-      dig = quorem(b,S) + '0';
+      dig = quorum(b,S) + '0';
       /* Do we yet have the shortest decimal string
        * that will round to d?
        */
@@ -748,7 +748,7 @@ dtoa
     }
   else
     for(i = 1;; i++) {
-      *s++ = (char)(dig = (int)(quorem(b,S) + '0'));
+      *s++ = (char)(dig = (int)(quorum(b,S) + '0'));
       if (!b->x[0] && b->wds <= 1) {
 #ifdef SET_INEXACT
         inexact = 0;

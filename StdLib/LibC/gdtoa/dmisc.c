@@ -106,7 +106,7 @@ freedtoa(char *s)
   }
 
  int
-quorem
+quorum
 #ifdef KR_headers
   (b, S) Bigint *b, *S;
 #else
@@ -127,7 +127,7 @@ quorem
   n = S->wds;
 #ifdef DEBUG
   /*debug*/ if (b->wds > n)
-  /*debug*/ Bug("oversize b in quorem");
+  /*debug*/ Bug("oversize b in quorum");
 #endif
   if (b->wds < n)
     return 0;
@@ -138,7 +138,7 @@ quorem
   q = *bxe / (*sxe + 1);  /* ensure q <= true quotient */
 #ifdef DEBUG
   /*debug*/ if (q > 9)
-  /*debug*/ Bug("oversized quotient in quorem");
+  /*debug*/ Bug("oversized quotient in quorum");
 #endif
   if (q) {
     borrow = 0;

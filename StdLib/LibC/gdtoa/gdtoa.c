@@ -591,7 +591,7 @@ bump_up:
    * shift left if necessary so divisor has 4 leading 0 bits.
    *
    * Perhaps we should just compute leading 28 bits of S once
-   * and for all and pass them and a shift to quorem, so it
+   * and for all and pass them and a shift to quorum, so it
    * can do shifts and ors to compute the numerator for q.
    */
 #ifdef Pack_32
@@ -668,7 +668,7 @@ one_digit:
     }
 
     for(i = 1;;i++) {
-      dig = quorem(b,S) + '0';
+      dig = quorum(b,S) + '0';
       /* Do we yet have the shortest decimal string
        * that will round to d?
        */
@@ -715,7 +715,7 @@ one_digit:
             b = multadd(b, 10, 0);
             if (b == NULL)
               return NULL;
-            dig = quorem(b,S) + '0';
+            dig = quorum(b,S) + '0';
           }
           if (dig++ == '9')
             goto round_9_up;
@@ -772,7 +772,7 @@ round_9_up:
   }
   else
     for(i = 1;; i++) {
-      *s++ = dig = quorem(b,S) + '0';
+      *s++ = dig = quorum(b,S) + '0';
       if (i >= ilim)
         break;
       b = multadd(b, 10, 0);

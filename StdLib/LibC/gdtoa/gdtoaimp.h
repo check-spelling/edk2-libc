@@ -524,7 +524,7 @@ extern void memcpy_D2A ANSI((void*, const void*, size_t));
 #define multadd       __multadd_D2A
 #define nrv_alloc     __nrv_alloc_D2A
 #define pow5mult      __pow5mult_D2A
-#define quorem        __quorem_D2A
+#define quorum        __quorum_D2A
 #define ratio         __ratio_D2A
 #define rshift        __rshift_D2A
 #define rv_alloc      __rv_alloc_D2A
@@ -575,7 +575,7 @@ extern Bigint  *mult        (Bigint*, Bigint*);
 extern Bigint  *multadd     (Bigint*, int, int);
 extern char    *nrv_alloc   (CONST char*, char **, size_t);
 extern Bigint  *pow5mult    (Bigint*, int);
-extern int      quorem      (Bigint*, Bigint*);
+extern int      quorum      (Bigint*, Bigint*);
 extern double   ratio       (Bigint*, Bigint*);
 extern void     rshift      (Bigint*, int);
 extern char    *rv_alloc    (size_t);
