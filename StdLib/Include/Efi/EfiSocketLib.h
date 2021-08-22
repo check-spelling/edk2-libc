@@ -129,7 +129,7 @@
 // Data Types
 //------------------------------------------------------------------------------
 
-typedef struct _ESL_SERVICE ESL_SERVICE;  ///<  Forward delcaration
+typedef struct _ESL_SERVICE ESL_SERVICE;  ///<  Forward declaration
 
 /**
   Protocol binding and installation control structure
