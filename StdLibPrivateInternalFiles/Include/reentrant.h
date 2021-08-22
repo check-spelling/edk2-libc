@@ -94,7 +94,7 @@
 #ifdef _REENTRANT
 
 /*
- * Abtract thread interface for thread-safe libraries.  These routines
+ * Abstract thread interface for thread-safe libraries.  These routines
  * will use stubs in libc if the application is not linked against the
  * pthread library, and the real function in the pthread library if it
  * is.
