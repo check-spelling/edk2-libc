@@ -2291,7 +2291,7 @@ main (
             TFTP_PACKET * pPacket;
 
             //
-            //  High speed TFTP uses an agressive retransmit to
+            //  High speed TFTP uses an aggressive retransmit to
             //  get the TFTP client moving again when the ACK or
             //  previous data packet was lost.
             //
