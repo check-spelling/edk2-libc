@@ -1689,7 +1689,7 @@ EslTcp6Receive (
   This routine returns the address of the remote connection point
   associated with the SOCK_STREAM or SOCK_SEQPACKET socket.
 
-  This routine is called by ::EslSocketGetPeerAddress to detemine
+  This routine is called by ::EslSocketGetPeerAddress to determine
   the TCPv6 address and por number associated with the network adapter.
 
   @param [in] pPort       Address of an ::ESL_PORT structure.

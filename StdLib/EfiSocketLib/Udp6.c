@@ -379,7 +379,7 @@ EslUdp6Receive (
   This routine returns the address of the remote connection point
   associated with the SOCK_DGRAM socket.
 
-  This routine is called by ::EslSocketGetPeerAddress to detemine
+  This routine is called by ::EslSocketGetPeerAddress to determine
   the UDPv4 address and port number associated with the network adapter.
 
   @param [in] pPort       Address of an ::ESL_PORT structure.
