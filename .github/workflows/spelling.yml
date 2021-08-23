@@ -33,6 +33,8 @@ jobs:
       uses: check-spelling/check-spelling@prerelease
       with:
         experimental_apply_changes_via_bot: 1
+        extra_dictionaries:
+          cspell:cpp/cpp.txt
         suppress_push_for_open_pull_request: 1
         post_comment: 0
         debug: 1
